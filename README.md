@@ -1,0 +1,1 @@
+These are some assignments from The Odin Project - JavaScript Basics - Chapter: Fundamentals 2
