@@ -5,9 +5,55 @@
   <meta charset="UTF-8"/>
 </head>
 <body>
+  <!------------------------ BUTTON for PROMPT ------------------------>
+  <button>Press me</button>
   <script>
-    // JS goes here
+    //---------------------- SOME STRINGS ----------------------
+    let string = 'The revolution will not be televised.';
+    console.log(string);
     
-  </script>
+    let badString = string;
+    console.log(badString);
+
+    let one = "Hello";
+    let two = ", how are you?";
+    let joined = one + two;
+    console.log(joined + " " + one +  two);
+
+    let multiple = one + one + one + one + two;
+    console.log(multiple);
+
+    let response = one + 'I am fine — ' + two;
+    console.log(response);
+
+    //---------------------- BUTTON FUNCTION ----------------------
+    const button = document.querySelector('button');
+
+    button.onclick = function() {
+      let name = prompt('What is your name?');
+      alert('Hello ' + name + ', nice to see you!');
+    }
+
+    //---------------------- CONCATENATION ----------------------
+    console.log('Front ' + 242);
+
+    let myDate = '19' + '67';
+    console.log(myDate);
+    console.log(typeof myDate);
+
+    console.log(myDate + " is a " + typeof myDate + " data type.")
+
+    //---------------------- DATA TYPE CONVERSION ----------------------
+
+    let myString = '123';
+    let myNum = Number(myString);
+    console.log(myString + " is a " + typeof myNum + " data type.");
+
+    let myNum2 = 123;
+    let myString2 = myNum2.toString();
+    console.log(typeof myString2);                                     // Returns "string" - OK
+    console.log(myString2 + " is a " + typeof myNum2 + " data type."); // Returns "number" - WHY?!?
+    
+    </script>
 </body>
 </html>
