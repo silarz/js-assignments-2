@@ -60,9 +60,21 @@
 
     let score = 9;
     let highestScore = 10;
-    let output = `I like the song "${ song }". I gave it a score of ${ score/highestScore * 100 }%.`;
+    let output = `
+I like the song "${ song }".
+I gave it a score of ${ score/highestScore * 100 }%.
+
+`;
     
     console.log(output);
+
+    let examScore = 45;
+    let examHighestScore = 70;
+
+    examPercentage = Math.round(examScore/examHighestScore*100);
+
+    examReport = `You scored ${ examScore }/${ examHighestScore } (${ examPercentage }%). ${ examPercentage >= 60 ? 'Well done, you passed!' : 'Bad luck, you didn\'t pass this time.' }`;
+    console.log(examReport);
 
     </script>
 </body>
