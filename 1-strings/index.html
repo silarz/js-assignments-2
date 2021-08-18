@@ -53,7 +53,17 @@
     let myString2 = myNum2.toString();
     console.log(typeof myString2);                                     // Returns "string" - OK
     console.log(myString2 + " is a " + typeof myNum2 + " data type."); // Returns "number" - WHY?!?
+
+    //---------------------- TEMPLATE LITERALS ----------------------
+    let song = 'Fight the Youth';
+    song = `Fight the Youth`;
+
+    let score = 9;
+    let highestScore = 10;
+    let output = `I like the song "${ song }". I gave it a score of ${ score/highestScore * 100 }%.`;
     
+    console.log(output);
+
     </script>
 </body>
 </html>
